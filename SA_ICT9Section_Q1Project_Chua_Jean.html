@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Div Page Sample</title>
+	<style type="text/css">
+		html, body{
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			font-family: monospace, sans-serif;
+		}
+		.container{
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+		}
+		.header{
+			background-color: #4b3832;
+			color: #be9b7b;
+			padding: 20px;
+			text-align: center;
+			font-size: 24px;
+			flex-shrink: 0;
+		}
+		.main{
+			display: flex;
+			flex-grow: 1;
+		}
+		.sidebar{
+			width: 25%;
+			background-color: #854442;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		.main-content{
+			flex-grow: 1;
+			background-color: #fff4e6;
+			padding: 20px;
+			box-sizing: border-box;
+			overflow-y: auto;
+		}
+		.form-section{
+			margin-top: 20px;
+			padding: 15px;
+			background-color: #3c2f2f;
+			border: 1px #3c2f2f;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="header">
+			<h3>B & V Jewelry</h3>
+		</div>
+		<div class="main">
+			<div class="sidebar">
+				<h3>About Our Shop</h3>
+				<p>Our shop sells a large variety of jewelry with a wide range and selection of different metals, precious gems, and sizes and more! We only sell the best highest quality jewelry and all our jewelries are 100% real tested and certified!</p>
+			</div>
+			<div class="main-content">
+				<h3>Jewelry Menu</h3>
+				<p>Select from our jewelry categories</p>
+				<div class="form-section">
+					<form>
+                        <p>Rings</p>
+                        <img src="rings.png">
+                        <p>Necklaces</p>
+                        <img src="necklaces.png">
+                        <p>Bracelets</p>
+                        <img src="bracelets.png">
+                        <p>Earrings</p>
+                        <img src="earrings.png">
+                        <p>Miscellanous</p>
+                        <img src="miscellanous.png">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
